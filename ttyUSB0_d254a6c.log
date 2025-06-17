@@ -1,0 +1,537 @@
+Autoboot in 0 seconds
+USB EHCI 1.10
+Bus usb@7d000000: 1 USB Device(s) found
+** Booting bootflow 'sdhci@700b0400.bootdev.part_1' with extlinux
+boot prev kernel
+1:      postmarketOS
+Enter choice: 1:        postmarketOS
+Retrieving file: /vmlinuz
+Retrieving file: /initramfs
+append: pmos_boot_uuid=78cc94fd-0209-416e-9ac8-fa84dd9102e3 pmos_root_uuid=c8a61058-3fc3-41bc-b345-e70562222b48 pmos_rootfsopts=defaults
+Retrieving file: /tegra124-xiaomi-mocha.dtb
+Kernel image @ 0x82000000 [ 0x000000 - 0x9a7b28 ]
+## Flattened Device Tree blob at 83000000
+   Booting using the fdt blob at 0x83000000
+Working FDT set to 83000000
+   Using Device Tree in place at 83000000, end 83013290
+Working FDT set to 83000000
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.15.0 (pmos@sakuranyan-ubuntu) (armv7-alpine-linux-musleabihf-gcc (Alpine 14.3.0) 14.3.0, GNU ld (GNU Binutils) 2.42) #1 SMP PREEMPT Mon Jun 16 14:36:40 UTC 2025
+[    0.000000] CPU: ARMv7 Processor [413fc0f3] revision 3 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] OF: fdt: Machine model: Xiaomi Mi Pad A0101
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 64 MiB at 0xbc000000
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x00000000afffffff]
+[    0.000000]   HighMem  [mem 0x00000000b0000000-0x00000000bfffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x00000000bfffffff]
+[    0.000000] OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+[    0.000000] percpu: Embedded 17 pages/cpu s39820 r8192 d21620 u69632
+[    0.000000] Kernel command line: pmos_boot_uuid=78cc94fd-0209-416e-9ac8-fa84dd9102e3 pmos_root_uuid=c8a61058-3fc3-41bc-b345-e70562222b48 pmos_rootfsopts=defaults
+[    0.000000] Unknown kernel command line parameters "pmos_boot_uuid=78cc94fd-0209-416e-9ac8-fa84dd9102e3 pmos_root_uuid=c8a61058-3fc3-41bc-b345-e70562222b48 pmos_rootfsopts=defaults", will be passed to user space.
+[    0.000000] printk: log buffer data + meta data: 131072 + 409600 = 540672 bytes
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 262144
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu:     RCU event tracing is enabled.
+[    0.000000]  Trampoline variant of Tasks RCU enabled.
+[    0.000000]  Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] /interrupt-controller@60004000: 160 interrupts forwarded to /interrupt-controller@50041000
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: tegra_suspend_timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 12.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x2c47f4ee7, max_idle_ns: 440795202497 ns
+[    0.000002] sched_clock: 56 bits at 12MHz, resolution 83ns, wraps every 4398046511096ns
+[    0.000020] Switching to timer-based delay loop, resolution 83ns
+[    0.000361] Console: colour dummy device 80x30
+[    0.000386] printk: legacy console [tty0] enabled
+[    0.001022] Calibrating delay loop (skipped), value calculated using timer frequency.. 24.00 BogoMIPS (lpj=120000)
+[    0.001070] CPU: Testing write buffer coherency: ok
+[    0.001174] CPU0: Spectre v2: using ICIALLU workaround
+[    0.001202] CPU0: Spectre BHB: enabling loop workaround for all CPUs
+[    0.001228] pid_max: default: 32768 minimum: 301
+[    0.001505] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.001547] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.002788] /cpus/cpu@0 missing clock-frequency property
+[    0.002874] /cpus/cpu@1 missing clock-frequency property
+[    0.002940] /cpus/cpu@2 missing clock-frequency property
+[    0.003006] /cpus/cpu@3 missing clock-frequency property
+[    0.003039] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.003135] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.040002] Setting up static identity map for 0x80100000 - 0x801000ac
+[    0.049997] rcu: Hierarchical SRCU implementation.
+[    0.050024] rcu:     Max phase no-delay instances is 1000.
+[    0.060131] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.071826] Tegra Revision: A01 SKU: 39 CPU Process: 1 SoC Process: 1
+[    0.080047] smp: Bringing up secondary CPUs ...
+[    0.110464] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.110588] CPU1: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.140530] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.140643] CPU2: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.160679] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.160789] CPU3: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.161007] smp: Brought up 1 node, 4 CPUs
+[    0.161039] SMP: Total of 4 processors activated (96.00 BogoMIPS).
+[    0.161068] CPU: All CPU(s) started in SVC mode.
+[    0.162030] Memory: 937004K/1048576K available (15360K kernel code, 1850K rwdata, 4744K rodata, 1024K init, 309K bss, 42276K reserved, 65536K cma-reserved, 196608K highmem)
+[    0.162730] devtmpfs: initialized
+[    0.181225] VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+[    0.181938] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.181993] posixtimers hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.182042] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.183160] pinctrl core: initialized pinctrl subsystem
+[    0.184974] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.186610] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.188238] thermal_sys: Registered thermal governor 'step_wise'
+[    0.188314] cpuidle: using governor menu
+[    0.198208] /pinmux@70000868: Fixed dependency cycle(s) with /pinmux@70000868/pinmux
+[    0.214140] No ATAGs?
+[    0.214360] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.214399] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.222557] tegra-mc 70019000.memory-controller: no memory timings for RAM code 0 registered
+[    0.223494] platform 50000000.host1x: Adding to iommu group 0
+[    0.223650] platform 57000000.gpu: Adding to iommu group 1
+[    0.232690] iommu: Default domain type: Translated
+[    0.232730] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.241431] SCSI subsystem initialized
+[    0.242067] usbcore: registered new interface driver usbfs
+[    0.242149] usbcore: registered new interface driver hub
+[    0.242221] usbcore: registered new device driver usb
+[    0.242390] mc: Linux media interface: v0.10
+[    0.242473] videodev: Linux video capture interface: v2.00
+[    0.242562] pps_core: LinuxPPS API ver. 1 registered
+[    0.242586] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.242631] PTP clock support registered
+[    0.243212] Advanced Linux Sound Architecture Driver Initialized.
+[    0.244126] Bluetooth: Core ver 2.22
+[    0.244191] NET: Registered PF_BLUETOOTH protocol family
+[    0.244215] Bluetooth: HCI device and connection manager initialized
+[    0.244247] Bluetooth: HCI socket layer initialized
+[    0.244275] Bluetooth: L2CAP socket layer initialized
+[    0.244317] Bluetooth: SCO socket layer initialized
+[    0.244913] nfc: nfc_init: NFC Core ver 0.1
+[    0.245024] NET: Registered PF_NFC protocol family
+[    0.245238] vgaarb: loaded
+[    0.245711] clocksource: Switched to clocksource arch_sys_counter
+[    0.263478] NET: Registered PF_INET protocol family
+[    0.263803] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.266064] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.266132] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.266177] TCP established hash table entries: 8192 (order: 3, 32768 bytes, linear)
+[    0.266286] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.266635] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.266784] UDP hash table entries: 512 (order: 2, 28672 bytes, linear)
+[    0.266883] UDP-Lite hash table entries: 512 (order: 2, 28672 bytes, linear)
+[    0.267156] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.267858] RPC: Registered named UNIX socket transport module.
+[    0.267892] RPC: Registered udp transport module.
+[    0.267915] RPC: Registered tcp transport module.
+[    0.267936] RPC: Registered tcp-with-tls transport module.
+[    0.267957] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.269133] PCI: CLS 0 bytes, default 64
+[    0.270525] Initialise system trusted keyrings
+[    0.271300] Unpacking initramfs...
+[    0.275931] workingset: timestamp_bits=30 max_order=18 bucket_order=0
+[    0.276565] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.277120] NFS: Registering the id_resolver key type
+[    0.277192] Key type id_resolver registered
+[    0.277217] Key type id_legacy registered
+[    0.411353] Key type asymmetric registered
+[    0.411415] Asymmetric key parser 'x509' registered
+[    0.411737] bounce: pool size: 64 pages
+[    0.411802] io scheduler mq-deadline registered
+[    0.411829] io scheduler kyber registered
+[    0.411880] io scheduler bfq registered
+[    0.414856] gpio gpiochip0: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.425017] tegra-apbdma 60020000.dma: Tegra20 APB DMA driver registered 32 channels
+[    0.426917] tegra-pmc 7000e400.pmc: i2c-thermtrip node not found, emergency thermal reset disabled.
+[    0.428191] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.432846] 70006300.serial: ttyS0 at MMIO 0x70006300 (irq = 70, base_baud = 25500000) is a Tegra
+[    0.432967] printk: legacy console [ttyS0] enabled
+[    0.837712] Freeing initrd memory: 9036K
+[    0.847184] platform 54200000.dc: Adding to iommu group 2
+[    1.350450] platform 54240000.dc: Adding to iommu group 2
+[    1.355505] platform 54340000.vic: Adding to iommu group 2
+[    1.361694] nouveau 57000000.gpu: supply vdd not found, using dummy regulator
+[    1.368350] nouveau 57000000.gpu: NVIDIA GK20A (0ea000a1)
+[    1.372884] nouveau 57000000.gpu: imem: using IOMMU
+[    1.377878] nouveau 57000000.gpu: gr ctor failed: -2
+[    1.382739] nouveau 57000000.gpu: probe with driver nouveau failed with error -2
+[    1.405924] loop: module loaded
+[    1.410775] CAN device driver interface
+[    1.412297] igb: Intel(R) Gigabit Ethernet Network Driver
+[    1.417694] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.423494] pegasus: Pegasus/Pegasus II USB Ethernet driver
+[    1.428851] usbcore: registered new interface driver pegasus
+[    1.434415] usbcore: registered new interface driver asix
+[    1.439817] usbcore: registered new interface driver ax88179_178a
+[    1.445896] usbcore: registered new interface driver cdc_ether
+[    1.451666] usbcore: registered new interface driver smsc75xx
+[    1.457431] usbcore: registered new interface driver smsc95xx
+[    1.463113] usbcore: registered new interface driver net1080
+[    1.468790] usbcore: registered new interface driver cdc_subset
+[    1.474640] usbcore: registered new interface driver zaurus
+[    1.480220] usbcore: registered new interface driver cdc_ncm
+[    1.485857] usbcore: registered new interface driver r8153_ecm
+[    1.492374] usbcore: registered new interface driver cdc_acm
+[    1.497214] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.505244] usbcore: registered new interface driver cdc_wdm
+[    1.510913] usbcore: registered new interface driver usb-storage
+[    1.520444] tegra_rtc 7000e000.rtc: registered as rtc1
+[    1.523232] tegra_rtc 7000e000.rtc: Tegra internal Real Time Clock
+[    1.529720] i2c_dev: i2c /dev entries driver
+[    1.541244] palmas 4-0058: Irq flag is 0x00000004
+[    1.547652] palmas 4-0058: Muxing GPIO ff, PWM 0, LED 0
+[    1.552626] /i2c@7000d000/pmic@58/pinmux: Fixed dependency cycle(s) with /i2c@7000d000/pmic@58/pinmux/pinmux
+[    1.567778] /i2c@7000d000/pmic@58/pmic: Fixed dependency cycle(s) with /i2c@7000d000/pmic@58/pmic/regulators/smps9
+[    1.575859] /i2c@7000d000/pmic@58/pmic: Fixed dependency cycle(s) with /i2c@7000d000/pmic@58/pmic/regulators/smps8
+[    1.586168] /i2c@7000d000/pmic@58/pmic: Fixed dependency cycle(s) with /i2c@7000d000/pmic@58/pmic/regulators/smps10_out2
+[    1.597002] /i2c@7000d000/pmic@58/pmic: Fixed dependency cycle(s) with /i2c@7000d000/pmic@58/pmic/regulators/smps6
+[    1.611803] gspca_main: v2.14.0 registered
+[    1.613654] usbcore: registered new interface driver uvcvideo
+[    1.620626] bq27xxx-battery 1-0055: data memory update not supported for chip
+[    1.630358] tegra-wdt 60005000.timer: initialized (heartbeat = 120 sec, nowayout = 0)
+[    1.636288] Bluetooth: HCI UART driver ver 2.3
+[    1.640353] Bluetooth: HCI UART protocol H4 registered
+[    1.645530] Bluetooth: HCI UART protocol Broadcom registered
+[    1.645990] vdd-touch: Bringing 2800000uV into 3300000-3300000uV
+[    1.652375] sdhci: Secure Digital Host Controller Interface driver
+[    1.659959] avdd-cam: Bringing 2800000uV into 2700000-2700000uV
+[    1.663129] sdhci: Copyright(c) Pierre Ossman
+[    1.673422] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.675622] avdd-cam-af: Bringing 2800000uV into 2700000-2700000uV
+[    1.679659] usbcore: registered new interface driver usbhid
+[    1.688477] vdd-rtc: Bringing 1100000uV into 950000-950000uV
+[    1.691001] usbhid: USB HID core driver
+[    1.747075] tegra-emc 7001b000.external-memory-controller: no memory timings for RAM code 0 found in DT
+[    1.754123] tegra-emc 7001b000.external-memory-controller: 64bit DRAM bus
+[    1.763509] tegra-emc 7001b000.external-memory-controller: OPP HW ver. 0x1, current clock rate 204 MHz
+[    1.772696] hw perfevents: enabled with armv7_cortex_a15 PMU driver, 7 (8000003f) counters available
+[    1.785791] NET: Registered PF_INET6 protocol family
+[    1.790184] Segment Routing with IPv6
+[    1.792118] In-situ OAM (IOAM) with IPv6
+[    1.796113] mip6: Mobile IPv6
+[    1.798907] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.806546] NET: Registered PF_PACKET protocol family
+[    1.809833] NET: Registered PF_KEY protocol family
+[    1.814584] can: controller area network core
+[    1.819022] NET: Registered PF_CAN protocol family
+[    1.823696] can: raw protocol
+[    1.826675] can: broadcast manager protocol
+[    1.830807] can: netlink gateway - max_hops=1
+[    1.835346] Bluetooth: RFCOMM socket layer initialized
+[    1.840301] Bluetooth: RFCOMM ver 1.11
+[    1.843982] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.849311] Bluetooth: BNEP socket layer initialized
+[    1.854191] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.860122] Bluetooth: HIDP socket layer initialized
+[    1.865393] Key type dns_resolver registered
+[    1.870557] Registering SWP/SWPB emulation handler
+[    1.892679] Loading compiled-in X.509 certificates
+[    1.937972] tegra-xusb-padctl 7009f000.padctl: supply avdd-pex-pll not found, using dummy regulator
+[    1.945298] tegra-xusb-padctl 7009f000.padctl: supply hvdd-pex-pll-e not found, using dummy regulator
+[    1.954875]  usb2-0: supply vbus not found, using dummy regulator
+[    1.991052] [drm] Initialized tegra 1.0.0 for drm on minor 0
+[    1.994448] drm drm: [drm] Cannot find any crtc or sizes
+[    2.004920] tegra-xusb 70090000.usb: Direct firmware load for nvidia/tegra124/xusb.bin failed with error -2
+[    2.012506] tegra-xusb 70090000.usb: failed to request firmware: -2
+[    2.018690] tegra-xusb 70090000.usb: failed to request firmware: -2
+[    2.025450] tegra-xusb 70090000.usb: probe with driver tegra-xusb failed with error -2
+[    2.040685] palmas-rtc 7000d000.i2c:pmic@58:rtc: registered as rtc0
+[    2.045755] palmas-rtc 7000d000.i2c:pmic@58:rtc: setting system clock to 2000-01-01T00:00:00 UTC (946684800)
+[    2.057891] cpufreq: cpufreq_online: CPU0: Running at unlisted initial frequency: 696000 kHz, changing to: 714000 kHz
+[    2.068830] sdhci-tegra 700b0400.mmc: Got CD GPIO
+[    2.072960] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.080020] mmc0: Invalid maximum block size, assuming 512 bytes
+[    2.080103] mmc2: Invalid maximum block size, assuming 512 bytes
+[    2.093112] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.093195] mmc1: Invalid maximum block size, assuming 512 bytes
+[    2.097018] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    2.110080] clk: Disabling unused clocks
+[    2.114953] PM: genpd: Disabling unused power domains
+[    2.118719] ALSA device list:
+[    2.121523][    2.135778] mmc0: SDHCI controller on 700b0000.mmc [700b0000.mmc] using ADMA 64-bit
+[    2.156037] mmc2: SDHCI controller on 700b0600.mmc [700b0600.mmc] using ADMA 64-bit
+[    2.157017] mmc1: SDHCI controller on 700b0400.mmc [700b0400.mmc] using ADMA 64-bit
+[    2.172440] Freeing unused kernel image (initmem) memory: 1024K
+[    2.176372] Run /init as init process
+[    2.181249] mmc0: new high speed SDIO card at address 0001
+[    2.191187] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac4354-sdio for chip BCM4354/1
+[    2.197809] brcmfmac mmc0:0001:1: Direct firmware load for brcm/brcmfmac4354-sdio.xiaomi,mocha.bin failed with error -2
+[    2.208348] brcmfmac mmc0:0001:1: Direct firmware load for brcm/brcmfmac4354-sdio.bin failed with error -2
+mount: mounting configfs on /config failed: No such device
+[    2.223753] mmc1: host does not support reading read-only switch, assuming write-enable
+[    2.234992] syslogd started: BusyBox v1.37.0
+[    2.238834] [pmOS-rd]:   ❬❬ PMOS STAGE 1 ❭❭
+[    2.242026] [pmOS-rd]: initramfs version: 3.8.3-r1
+[    2.246725] [pmOS-rd]:   ❬❬ PMOS STAGE 2 ❭❭
+[    2.256891] [pmOS-rd]: Starting systemd-udevd version 257.6
+[    2.265541] mmc1: new high speed SDHC card at address 0001
+[    2.267361] mmc2: new high speed MMC card at address 0001
+[    2.269925] mmcblk1: mmc1:0001 ASTC 3.72 GiB
+[    2.285758] mmcblk2: mmc2:0001 SDW64G 58.2 GiB
+[    2.291019] Alternate GPT is invalid, using primary GPT.
+[    2.294062]  mmcblk2: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29
+[    2.298657] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    2.310133] mmcblk2boot0: mmc2:0001 SDW64G 4.00 MiB
+[    2.315703] GPT:1515519 != 7806975
+[    2.321110] mmcblk2boot1: mmc2:0001 SDW64G 4.00 MiB
+[    2.325747] GPT:Alternate GPT header not at the end of the disk.
+[    2.328466] mmcblk2rpmb: mmc2:0001 SDW64G 4.00 MiB, chardev (246:0)
+[    2.331998] GPT:1515519 != 7806975
+[    2.332007] GPT: Use GNU Parted to correct GPT errors.
+[    2.332072]  mmcblk1: p1 p2
+[    3.074215] [pmOS-rd]: modprobe: FATAL: Module libcomposite not found in directory /lib/modules/6.15.0
+[    3.090972] [pmOS-rd]: cat: can't open '/config/usb_gadget/g1/UDC': No such file or directory
+[    3.127291] [pmOS-rd]:   Could not find an interface to run a dhcp server on
+[    3.132231] [pmOS-rd]:   Interfaces:
+[    3.135621] [pmOS-rd]: 1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN qlen 1000
+[    3.143384] [pmOS-rd]:     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+[    3.150858] [pmOS-rd]: 2: dummy0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 1000
+[    3.159101] [pmOS-rd]:     link/ether 92:a9:83:52:e4:c7 brd ff:ff:ff:ff:ff:ff
+[    3.166273] [pmOS-rd]: 3: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+[    3.173917] [pmOS-rd]:     link/sit 0.0.0.0 brd 0.0.0.0
+[    3.179201] [pmOS-rd]: 4: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN qlen 1000
+[    3.187246] [pmOS-rd]:     link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+[   13.417846] [pmOS-rd]: ERROR: /dev/fb0 did not appear after waiting 10 seconds!
+[   13.422946] [pmOS-rd]: If your device does not have a framebuffer, disable this with:
+[   13.430932] [pmOS-rd]: no_framebuffer=true in <https://postmarketos.org/deviceinfo>
+[   13.447229] [pmOS-rd]: tfb_acquire_fb() failed with error code: 1
+[   13.451157] [pmOS-rd]: couldn't open /dev/input/: No such file or directory
+[   13.458129] [pmOS-rd]: couldn't open /dev/input/: No such file or directory
+[   14.454240] [pmOS-rd]: Trying to mount subpartitions for 10 seconds...
+[   14.980086] [pmOS-rd]: Unable to resize root partition: failed to find qualifying partition
+[   15.012649] [pmOS-rd]: Auto-repair and check 'ext' filesystem (/dev/mmcblk1p2)
+[   15.026392] [pmOS-rd]: pmOS_root: clean, 8701/31744 files, 372366/506880 blocks
+[   15.064488] [pmOS-rd]: tfb_acquire_fb() failed with error code: 1
+[   15.135062] [pmOS-rd]: Resize 'ext4' root filesystem (/dev/mmcblk1p2)
+[   15.144124] [pmOS-rd]: resize2fs 1.47.2 (1-Jan-2025)
+[   15.147321] [pmOS-rd]: The filesystem is already 506880 (1k) blocks long.  Nothing to do!
+[   15.156503] [pmOS-rd]: Mount root partition (/dev/mmcblk1p2) to /sysroot (read-write) with options defaults
+[   15.348957] EXT4-fs (mmcblk1p2): mounted filesystem c8a61058-3fc3-41bc-b345-e70562222b48 r/w with ordered data mode. Quota mode: disabled.
+[   15.401469] [pmOS-rd]: Switching root
+tfb_acquire_fb() failed with error code: 1
+[   15.434630] syslogd exiting
+[   15.945317] systemd[1]: System time advanced to timestamp on /var/lib/systemd/timesync/clock: Sun 2025-06-15 02:30:38 UTC
+[   16.051137] systemd[1]: Failed to find module 'autofs4'
+[   16.093195] systemd[1]: systemd 257.6 running in system mode (+PAM +AUDIT -SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID -CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE -TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -BTF +XKBCOMMON -UTMP -SYSVINIT -LIBARCHIVE)
+[   16.125884] systemd[1]: Detected architecture arm.
+
+Welcome to postmarketOS edge!
+[   16.152363] systemd[1]: Hostname set to <xiaomi-mocha>.
+
+[   17.189604] systemd[1]: Queued start job for default target Graphical Interface.
+[   17.219920] systemd[1]: Created slice Slice /system/getty.
+[  OK  ] Created slice Slice /system/getty.
+[   17.247622] systemd[1]: Created slice Slice /system/modprobe.
+[  OK  ] Created slice Slice /system/modprobe.
+[   17.277316] systemd[1]: Created slice Slice /system/serial-getty.
+[  OK  ] Created slice Slice /system/serial-getty.
+[   17.306933] systemd[1]: Created slice User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[   17.336503] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[   17.366272] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[   17.396299] systemd[1]: Arbitrary Executable File Formats File System Automount Point was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/binfmt_misc).
+[   17.410400] systemd[1]: Expecting device /dev/disk/by-uuid/78cc94fd-0209-416e-9ac8-fa84dd9102e3...
+         Expecting device /dev/disk/by-uuid…94fd-0209-416e-9ac8-fa84dd9102e3...
+[   17.455945] systemd[1]: Expecting device /dev/ttyS0...
+         Expecting device /dev/ttyS0...
+[   17.476000] systemd[1]: Reached target Local Encrypted Volumes.
+[  OK  ] Reached target Local Encrypted Volumes.
+[   17.496148] systemd[1]: Reached target Local Integrity Protected Volumes.
+[  OK  ] Reached target Local Integrity Protected Volumes.
+[   17.525871] systemd[1]: Reached target Path Units.
+[  OK  ] Reached target Path Units.
+[   17.546083] systemd[1]: Reached target Remote Encrypted Volumes.
+[  OK  ] Reached target Remote Encrypted Volumes.
+[   17.576045] systemd[1]: Reached target Remote File Systems.
+[  OK  ] Reached target Remote File Systems.
+[   17.596063] systemd[1]: Reached target Slice Units.
+[  OK  ] Reached target Slice Units.
+[   17.616174] systemd[1]: Reached target Local Verity Protected Volumes.
+[  OK  ] Reached target Local Verity Protected Volumes.
+[   17.654786] systemd[1]: Listening on Process Core Dump Socket.
+[  OK  ] Listening on Process Core Dump Socket.
+[   17.682250] systemd[1]: Listening on Credential Encryption/Decryption.
+[  OK  ] Listening on Credential Encryption/Decryption.
+[   17.706589] systemd[1]: Listening on Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[   17.736694] systemd[1]: Listening on Journal Sockets.
+[  OK  ] Listening on Journal Sockets.
+[   17.755997] systemd[1]: Listening on DDI File System Mounter Socket.
+[  OK  ] Listening on DDI File System Mounter Socket.
+[   17.786511] systemd[1]: Listening on Namespace Resource Manager Socket.
+[  OK  ] Listening on Namespace Resource Manager Socket.
+[   17.816111] systemd[1]: Userspace Out-Of-Memory (OOM) Killer Socket was skipped because of an unmet condition check (ConditionPathExists=/proc/pressure/memory).
+[   17.829057] systemd[1]: Listening on udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[   17.856427] systemd[1]: Listening on udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[   17.876740] systemd[1]: Huge Pages File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/mm/hugepages).
+[   17.887512] systemd[1]: POSIX Message Queue File System was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/mqueue).
+[   17.996343] systemd[1]: Mounting Kernel Debug File System...
+         Mounting Kernel Debug File System...
+[   18.018555] systemd[1]: Mounting Kernel Trace File System...
+         Mounting Kernel Trace File System...
+[   18.056741] systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/6.15.0/modules.devname).
+[   18.074078] systemd[1]: Starting Load Kernel Module configfs...
+         Starting Load Kernel Module configfs...
+[   18.110358] systemd[1]: Starting Load Kernel Module dm_mod...
+         Starting Load Kernel Module dm_mod...
+[   18.151400] systemd[1]: Starting Load Kernel Module drm...
+         Starting Load Kernel Module drm...
+[   18.191772] systemd[1]: Starting Load Kernel Module efi_pstore...
+         Starting Load Kernel Module efi_pstore...
+[   18.231362] systemd[1]: Starting Load Kernel Module fuse...
+         Starting Load Kernel Module fuse...
+[   18.272286] systemd[1]: Starting Load Kernel Module loop...
+         Starting Load Kernel Module loop...
+[   18.311525] systemd[1]: Starting Load Kernel Module zram...
+         Starting Load Kernel Module zram...
+[   18.346491] systemd[1]: Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+[   18.364184] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[   18.375915] systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+[   18.390780] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[   18.411865] systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+[   18.419126] systemd[1]: Userspace Out-Of-Memory (OOM) Killer was skipped because of an unmet condition check (ConditionPathExists=/proc/pressure/memory).
+[   18.435295] systemd[1]: Starting Remount Root and Kernel File Systems...
+         Starting Remount Root and Kernel File Systems...
+[   18.479656] systemd[1]: Starting Apply Kernel Variables...
+         Starting Apply Kernel Variables...
+[   18.521594] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+         Starting Create Static Device Nodes in /dev gracefully...
+[   18.534340] systemd-journald[359]: Collecting audit messages is disabled.
+[   18.542177] EXT4-fs (mmcblk1p2): re-mounted c8a61058-3fc3-41bc-b345-e70562222b48.
+[   18.562276] systemd[1]: Starting Load udev Rules from Credentials...
+         Starting Load udev Rules from Credentials...
+[   18.602787] systemd[1]: Starting Coldplug All udev Devices...
+         Starting Coldplug All udev Devices...
+[   18.640844] systemd[1]: Starting swap with zram...
+         Starting swap with zram...
+[   18.674979] systemd[1]: Started Journal Service.
+[  OK  ] Started Journal Service.
+[  OK  ] Mounted Kernel Debug File System.
+[  OK  ] Mounted Kernel Trace File System.
+[  OK  ] Finished Load Kernel Module configfs.
+[  OK  ] Finished Load Kernel Module dm_mod.
+[  OK  ] Finished Load Kernel Module drm.
+[  OK  ] Finished Load Kernel Module efi_pstore.
+[  OK  ] Finished Load Kernel Module fuse.
+[  OK  ] Finished Load Kernel Module loop.
+[  OK  ] Finished Load Kernel Module zram.
+[  OK  ] Finished Remount Root and Kernel File Systems.
+[  OK  ] Finished Apply Kernel Variables.
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+[  OK  ] Finished Load udev Rules from Credentials.
+[  OK  ] Finished Coldplug All udev Devices.
+         Starting Flush Journal to Persistent Storage...
+         Starting Load/Save OS Random Seed...
+[   19.170280] systemd-journald[359]: Received client request to flush runtime journal.
+[   19.257380] systemd-journald[359]: /var/log/journal/ac7c8b3418ab4d99bcb0f41e018dcc3f/system.journal: Realtime clock jumped backwards relative to last journal entry, rotating.
+[   19.270830] systemd-journald[359]: Rotating system journal.
+         Starting Network Time Synchronization...
+         Starting Create Static Device Nodes in /dev...
+[  OK  ] Finished Create Static Device Nodes in /dev.
+[  OK  ] Reached target Preparation for Local File Systems.
+         Starting Rule-based Manager for Device Events and Files...
+[  OK  ] Started Network Time Synchronization.
+[  OK  ] Reached target System Time Set.
+[  OK  ] Finished Flush Journal to Persistent Storage.
+[  OK  ] Reached target Containers.
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+[  OK  ] Found device /dev/ttyS0.
+[   20.403570] tegra_soctherm 700e2000.thermal-sensor: thermtrip: will shut down when cpu reaches 103000 mC
+[   20.429618] tegra_soctherm 700e2000.thermal-sensor: throttrip: will throttle when cpu reaches 103000 mC
+[   20.443700] tegra_soctherm 700e2000.thermal-sensor: thermtrip: will shut down when gpu reaches 101000 mC
+[   20.452627] tegra_soctherm 700e2000.thermal-sensor: throttrip: will throttle when gpu reaches 101000 mC
+[   20.462376] tegra_soctherm 700e2000.thermal-sensor: thermtrip: will shut down when pll reaches 103000 mC
+[   20.484853] tegra_soctherm 700e2000.thermal-sensor: thermtrip: will shut down when mem reaches 103000 mC
+[  OK  ] Found device /dev/disk/by-uuid/78cc94fd-0209-416e-9ac8-fa84dd9102e3.
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+         Mounting /boot...
+         Starting Virtual Console Setup...
+[  OK  ] Mounted /boot.
+[  OK  ] Finished Virtual Console Setup.
+[   22.195901] random: crng init done
+[  OK  ] Finished Load/Save OS Random Seed.
+[FAILED] Failed to start swap with zram.
+See 'systemctl status zram_swap.service' for details.
+[  OK  ] Reached target Swaps.
+         Mounting Temporary Directory /tmp...
+[  OK  ] Mounted Temporary Directory /tmp.
+[  OK  ] Reached target Local File Systems.
+[  OK  ] Listening on System Extension Image Management.
+         Starting Create System Files and Directories...
+[  OK  ] Finished Create System Files and Directories.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+[  OK  ] Reached target Timer Units.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[  OK  ] Listening on Hostname Service Socket.
+[  OK  ] Reached target Socket Units.
+[  OK  ] Reached target Basic System.
+         Starting D-Bus System Message Bus...
+         Starting Stop pbsplash...
+         Starting nftables firewall used on pmOS...
+         Starting RealtimeKit Scheduling Policy Service...
+[  OK  ] Started Sleep Inhibitor Service.
+         Starting User Login Management...
+[  OK  ] Finished Stop pbsplash.
+[FAILED] Failed to start nftables firewall used on pmOS.
+See 'systemctl status nftables.service' for details.
+[  OK  ] Reached target Preparation for Network.
+[  OK  ] Started User Login Management.
+[  OK  ] Started D-Bus System Message Bus.
+         Starting Network Manager...
+         Starting WPA supplicant...
+[  OK  ] Started RealtimeKit Scheduling Policy Service.
+[  OK  ] Started WPA supplicant.
+         Starting Hostname Service...
+[  OK  ] Started Hostname Service.
+         Starting Network Manager Script Dispatcher Service...
+[  OK  ] Started Network Manager.
+[  OK  ] Reached target Network.
+[  OK  ] Started OpenSSH Daemon.
+         Starting Permit User Sessions...
+[  OK  ] Started Network Manager Script Dispatcher Service.
+[  OK  ] Finished Permit User Sessions.
+[  OK  ] Started Getty on tty1.
+[  OK  ] Started Serial Getty on ttyS0.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+
+[   32.486621] vdd-gpu: disabling
+[   32.488814] avdd-dsi-csi: disabling
+[   32.491449] avdd-lcd-vsn: disabling
+Welcome to postmarketOS
+Kernel 6.15.0 on an armv7l (ttyS0)
+xiaomi-mocha login: user
+Password:
+[   42.627442] systemd-journald[359]: /var/log/journal/ac7c8b3418ab4d99bcb0f41e018dcc3f/user-10000.journal: Realtime clock jumped backwards relative to last journal entry, rotating.
+Welcome to postmarketOS! o/
+
+This distribution is based on Alpine Linux.
+First time using postmarketOS? Make sure to read the cheatsheet in the wiki:
+
+-> https://postmarketos.org/cheatsheet
+
+You may change this message by editing /etc/motd
