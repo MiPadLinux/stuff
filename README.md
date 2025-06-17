@@ -1,2 +1,2 @@
 # stuff
-Anything that stores temply.
+Anything other than kernel code.
